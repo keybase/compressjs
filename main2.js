@@ -1,3 +1,4 @@
+if (typeof console.assert !== "function") { console.assert = function () {} };
 exports.BWT = require('./outlib/BWT');
 exports.BWTC = require('./outlib/BWTC');
 exports.BitStream = require('./outlib/BitStream');
