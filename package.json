@@ -1,6 +1,6 @@
 {
   "name": "keybase-compressjs",
-  "version": "1.0.1-a",
+  "version": "1.0.1-b",
   "author": "C. Scott Ananian",
   "description": "pure JavaScript de/compression (bzip2, etc) for node.js, volo, and the browser.",
   "keywords": [
