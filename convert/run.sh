@@ -2,6 +2,9 @@
 
 for file in ../lib/*.js
 do
-	out=../outlib/`basename $file`
+	b=`basename $file`
+	out=../outlib/$b
 	iced runfile.iced $file $out
+	stem=`basename -s .js $b`
+	echo "exports.$stem = require('./outlib/$stem');" >> ../main2.js
 done
